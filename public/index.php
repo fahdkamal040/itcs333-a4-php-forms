@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (!validate_email($email)) {
-        $errors['email'] = 'Please enter a valid email address.';
+        $errors['email'] = 'Invalid email address.';
     }
 
     if (!validate_required($message)) {
